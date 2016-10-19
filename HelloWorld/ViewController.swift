@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func showHeart() {
+        let alertController = UIAlertController(title: "Hey, I have something to say.", message: "❤️", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func showBroken() {
+        let alertController = UIAlertController(title: "Hey, I have something to say.", message: "💔", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        present(alertController, animated: true, completion: nil)
+    }
 }
 
